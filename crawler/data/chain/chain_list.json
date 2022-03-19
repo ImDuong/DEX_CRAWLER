@@ -1,0 +1,36 @@
+[
+    {
+        "chain_id": 1,
+        "chain_name": "eth",
+        "ws_api": "wss://speedy-nodes-nyc.moralis.io/85e093747d9734d7e2762619/eth/mainnet/ws"
+    },
+    {
+        "chain_id": 3,
+        "chain_name": "ropsten",
+        "ws_api": "wss://speedy-nodes-nyc.moralis.io/85e093747d9734d7e2762619/eth/ropsten/ws"
+    },
+    {
+        "chain_id": 25,
+        "chain_name": "cronos"
+    },
+    {
+        "chain_id": 56,
+        "chain_name": "bsc",
+        "ws_api": "wss://speedy-nodes-nyc.moralis.io/85e093747d9734d7e2762619/bsc/mainnet/ws"
+    },
+    {
+        "chain_id": 137,
+        "chain_name": "polygon",
+        "ws_api": "wss://speedy-nodes-nyc.moralis.io/85e093747d9734d7e2762619/polygon/mainnet/ws"
+    },
+    {
+        "chain_id": 250,
+        "chain_name": "fantom",
+        "ws_api": "wss://speedy-nodes-nyc.moralis.io/85e093747d9734d7e2762619/fantom/mainnet/ws"
+    },
+    {
+        "chain_id": 43114,
+        "chain_name": "avax",
+        "ws_api": "wss://speedy-nodes-nyc.moralis.io/85e093747d9734d7e2762619/avax/mainnet/ws"
+    }
+]
