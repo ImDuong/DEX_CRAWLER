@@ -6,11 +6,11 @@ cns = new ChainNameService("./crawler/data/chain/chain_list.json")
 module.exports = class DexWriterService {
     constructor(source_file) {
         this.source_file = source_file
-        this.#processSourceFile()
+        this.processSourceFile()
 
     }
 
-    #processSourceFile() {
+    processSourceFile() {
         let rawdata = fs.readFileSync(this.source_file);
         this.dex_list = JSON.parse(rawdata)
 

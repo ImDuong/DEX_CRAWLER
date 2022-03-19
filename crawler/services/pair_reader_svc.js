@@ -4,13 +4,13 @@ const Pair= require('../models/pair.js')
 module.exports = class PairReaderService {
     constructor(source_file) {
         this.source_file = source_file
-        this.#processSourceFile()
+        this.processSourceFile()
 
         // define pair generation strategy
         this.gen_pairs_util = (arr) => arr.map( (v, i) => arr.slice(i + 1).map(w => [v, w]) ).flat();
     }
 
-    #processSourceFile() {
+    processSourceFile() {
         let rawdata = fs.readFileSync(this.source_file);
         this.source_data = JSON.parse(rawdata)
         this.tokens = this.source_data.tokens

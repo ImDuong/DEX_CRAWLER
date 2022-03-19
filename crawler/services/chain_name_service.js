@@ -4,10 +4,10 @@ const fs = require('fs');
 module.exports = class ChainNameService {
     constructor(source_file) {
         this.source_file = source_file;
-        this.#processSourceFile();
+        this.processSourceFile();
     }
 
-    #processSourceFile() {
+    processSourceFile() {
         let rawdata = fs.readFileSync(this.source_file);
         this.chain_list = JSON.parse(rawdata)
     }

@@ -5,10 +5,10 @@ const Dex = require('../models/dex.js');
 module.exports = class DexInitiatorService {
     constructor(source_file) {
         this.source_file = source_file;
-        this.#processSourceFile();
+        this.processSourceFile();
     }   
 
-    #processSourceFile() {
+    processSourceFile() {
         let rawdata = fs.readFileSync(this.source_file);
         this.dex_name_list = JSON.parse(rawdata)
 
