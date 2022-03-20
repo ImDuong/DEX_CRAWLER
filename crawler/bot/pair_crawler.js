@@ -51,7 +51,7 @@ module.exports = async function PairCrawler(isContinueFromLastCheckpoint) {
             for (var dex_name of dex_name_list) {
                 console.log("Chain", chosen_chainid, ": crawling pairs for", dex_name);
                 // import abi
-                const DEX_ABI = require('../../abi/factory/' + dex_name + "_" + chosen_chainid + "_abi.json")
+                const DEX_ABI = require('../../abi/factory/' + dex_name.toLowerCase() + "_" + chosen_chainid + "_abi.json")
     
                 // create contract for dex
                 dex_contract = new ethers.Contract(dexInit.getDexFactory(dex_name, chosen_chainid), DEX_ABI, WSProvider)
